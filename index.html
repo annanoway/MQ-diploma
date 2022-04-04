@@ -27,10 +27,13 @@
           </ul>
         </nav>
       
+      <div class="menu-shot-conteiner">
       <div class="menu-shot">
       <svg class="menu-shot" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="23px" height="18px"><path fill="#ffffff" d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
     </div>
     </div>
+    </div>
+    
       <div class="logo-title-mobile">
         <a href="#0"><img class="mobile-logo" src="svg/noemi-logo.svg" alt="Логотип"></a>
           <h1 class="welcome-title-mobile">блог о творчестве, спорте, и образе жизни</h1>
@@ -53,8 +56,8 @@
             </ul>
           </div>
           <div>
-            <h2 class="trend-title"><a href="#0" class="trend-title-link">сейчас в тренде: сад на подоконнике</a>
-            </h2>
+            <h3 class="trend-title"><a href="#0" class="trend-title-link">сейчас в тренде: сад на подоконнике</a>
+            </h3>
           </div>
         </div> 
       </article>
@@ -66,8 +69,8 @@
             </ul>
           </div>
           <div>
-            <h2 class="trend-title"><a href="#0" class="trend-title-link">сыры на красивых картинках из интернета: какие они на вкус?</a>
-            </h2>
+            <h3 class="trend-title"><a href="#0" class="trend-title-link">сыры на красивых картинках из интернета: какие они на вкус?</a>
+            </h3>
           </div>
         </div> 
       </article>
@@ -80,8 +83,8 @@
             </ul>
           </div>
           <div>
-            <h2 class="trend-title"><a href="#0" class="trend-title-link">собираемся в первый поход в горы</a>
-            </h2>
+            <h3 class="trend-title"><a href="#0" class="trend-title-link">собираемся в первый поход в горы</a>
+            </h3>
           </div>
         </div> 
       </article>
@@ -94,8 +97,8 @@
             </ul>
           </div>
           <div>
-            <h2 class="trend-title"><a href="#0" class="trend-title-link">сейчас в тренде: сколько витамина с в лимонах?</a>
-            </h2>
+            <h3 class="trend-title"><a href="#0" class="trend-title-link">сейчас в тренде: сколько витамина с в лимонах?</a>
+            </h3>
           </div>
         </div> 
       </article>
@@ -374,19 +377,19 @@
     <h2 class="shop-container-title">наши изделия</h2>
     <div class="shop-container">
       <article class="shop-product">
-        <div class="shop-item-img">
-            <picture>  
+        
+            <picture class="shop-item-img">  
               <source  
                 media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
               <source  
-                media="(min-width: 641px and max-width: 1200px)"
+                media="(min-width: 641px) and (max-width: 1200px)"
                 srcset="images/shop-item-tablet1.jpg">
               <source  
                 media="(min-width: 1201px)"
                 srcset="images/shop-item-desk1.jpg">
               <img class="product-img" src="images/shop-item-desk1.jpg" alt="подушки на диван">
             </picture>
-          </div>
+        
           <div class="shop-item-border">
               <div class="shop-item-title">
                 <h3 class="shop-item-title">подушки на диван</h3>
@@ -410,20 +413,20 @@
             </div>
         </article>
         <article class="shop-product">
-          <div class="shop-item-img">
-            <picture>  
+          
+            <picture class="shop-item-img">  
               <source  
                 media="(max-width:640px)"
                 srcset="images/shop-item-mobile2.jpg">
               <source  
-                media="(min-width:641 and max-width:1200px)"
+                media="(min-width:641px) and (max-width:1200px)"
                 srcset="images/shop-item-tablet2.jpg">
               <source  
                 media="(min-width:1201px)"
                 srcset="images/shop-item-desk2.jpg">
               <img class="product-img" src="images/shop-item-desk2.jpg" alt="кукла зайчик">
             </picture>
-          </div>
+          
             <div class="shop-item-border">
               <div class="shop-item-title">
                 <h3 class="shop-item-title">кукла "зайчик"</h3>
@@ -438,22 +441,23 @@
                   </div>
                   <button class="shop-button">в магазин</button>
               </div>
+            </div>
         </article>
         <article class="shop-product">
-        <div class="shop-item-img">
-            <picture>  
+        
+            <picture class="shop-item-img">  
               <source  
                 media="(max-width:640px)"
                 srcset="images/shop-item-mobile3.jpg">
               <source  
-                media="(min-width:641 and max-width:1200px)"
+                media="(min-width:641px) and (max-width:1200px)"
                 srcset="images/shop-item-tablet3.jpg">
               <source  
                 media="(min-width:1201px)"
                 srcset="images/shop-item-desk3.jpg">
               <img class="product-img" src="images/shop-item-desk3.jpg" alt="подушки на диван">
             </picture>
-          </div>
+         
             <div class="shop-item-border">
               <div class="shop-item-title">
                 <h3 class="shop-item-title">шестиугольная рамка</h3>
@@ -476,6 +480,7 @@
               </div>
             </div>
         </article>
+      </div>
     </section>
   </div>
       
@@ -514,6 +519,7 @@
     </div>
   </footer>
  </div>
+</div>
 
 <div class="popup-banner hidden">
         <h3 class="popup-title">ваш фидбек</h3>
