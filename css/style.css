@@ -82,8 +82,8 @@
 }
 
 .menu-shot {
-  width: 25px;
-  height: 19px; 
+  width: 27px;
+  height: 31px; 
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -133,7 +133,7 @@
 }
 
 .trends-container-title, .shop-container-title, .popup-title {
-  font-size: calc(0.48vw + 10px);
+  font-size: 20px;
   line-height: 29px;
   color: #0f0d0e;
   font-weight: 700;
@@ -283,7 +283,6 @@
 
 .post-img {
   width: 381px;
-  height: 294px;
   background-color: #eff6f1;
 }
 
@@ -558,6 +557,7 @@ p:nth-child(n+2) {
 }
 
 .shop-container-title {
+  font-size: 20px;
   margin-top: 58px;
 }
 
@@ -1059,22 +1059,17 @@ p:nth-child(n+2) {
   .shop-product::after {
     content: "";
     position: absolute;
-    top: 196px;/*calc(290px - 10vw);*/
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
     z-index: -1;
     opacity: 1;
-    border: 3px solid #b59f5b;
  }
  
  .shop-item-description {
-  max-width: 100%; 
+    max-width: 100%; 
  }
   
  .shop-product {
-  padding: 2.65%;
-   width: 49%;
+    padding: 24px;
+    width: 49%;
  }
 
   .product-img {
@@ -1090,27 +1085,36 @@ p:nth-child(n+2) {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
-  .trend-item {
-    width: calc(49% - 8px);
-    min-height: 30vmin;
-    margin: 4px;
-  }
-  
-  .shop-product {
-  width: 48%; 
-  }
-}
-
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
   .trend-item {
-    width: calc(49% - 8px);
+    width: calc(24% - 8px);
     min-height: 30vmin;
     margin: 4px;
   }
   
   .shop-product {
   width: 48%;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 641px) and (orientation: portrait), (max-height: 641px) and (orientation: landscape) {
+  .trend-item {
+    width: calc(49% - 8px);
+    min-height: 30vmin;
+    margin: 4px;
+  }
+
+  .trends-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .trend-item {
+    width: 48%;
+  }
+  
+  .shop-product {
+  width: 48%; 
   }
 }
 
@@ -1145,11 +1149,13 @@ p:nth-child(n+2) {
 
   .menu-shot-conteiner {
     top: 31px;
-    right: 31px;
+    right: 16px;
   }
 
   .mobile-logo {
-    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 270px;
   }
 
   .welcome-title-mobile {
@@ -1180,7 +1186,6 @@ p:nth-child(n+2) {
   .trend-description {
     padding: 32px;
     width: 100%;
-    background-color: #000000;
     border: 3px solid #b59f5b;
 }
 
@@ -1216,6 +1221,7 @@ p:nth-child(n+2) {
 
   .post {
     padding-top: 40px 14px 19px 14px;
+    margin-bottom: 34px;
     flex-direction: column;
     border-bottom: solid;
     border-width: 3px;
@@ -1236,6 +1242,7 @@ p:nth-child(n+2) {
 
   .post-description {
    margin: 0 auto;
+   padding-bottom: 27px;
    width: 100%;
   }
 
@@ -1357,6 +1364,7 @@ p:nth-child(n+2) {
 }
 
 @media (max-width: 641px) and (orientation: portrait) {
+
   .trends-container {
     flex-direction: column;  
   }
@@ -1365,18 +1373,22 @@ p:nth-child(n+2) {
     width: 100%;
   }
 
+  .trend-item:nth-child(n+2) {
+    margin-left: 0;
+  }
+
   .socials {
     padding-left: 0;
     padding-right: 0;
    }
 
-@media (max-width: 641px) and (orientation: landscape) {
+//*@media (max-width: 641px) and (orientation: landscape) {
   .trends-container {
     flex-direction: row;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
   }
 
   .trend-item {
       width: 48%;
-    }
-}
+  }
+}*//
