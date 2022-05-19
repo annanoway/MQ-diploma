@@ -70,7 +70,7 @@
   padding: 0 15px;
   right: 0;
   left: 0;
-  //*margin: auto;*//
+ /*margin: auto;*/
 } 
 
 .logo {
@@ -160,7 +160,7 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-  //*margin-top: 6%;*//
+  /*margin-top: 6%;*/
 }
 
 .trend-item {
@@ -430,7 +430,7 @@ p:nth-child(n+2) {
 
 .visually-hidden {
   position: absolute;
-  widht: 1px;
+  width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
@@ -657,7 +657,7 @@ p:nth-child(n+2) {
 .popup-banner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: fixed;
     background-color: #00000060;
     top: 0px;
@@ -665,6 +665,7 @@ p:nth-child(n+2) {
     left: 0px;
     right: 0px;
     z-index: 20;
+    overflow-y: auto;
   }
 
   .popup-form {
@@ -672,6 +673,7 @@ p:nth-child(n+2) {
       width: 390px;
       padding: 54px 30px;
       position: relative;
+      margin: auto;
     }
   
     .form_header {
@@ -814,7 +816,7 @@ p:nth-child(n+2) {
       height: 20px;
       position: absolute;
       top: -20px;
-      right: -20px;
+      right: -1px;
     }
 
     .popup_hidden {
@@ -1074,6 +1076,11 @@ p:nth-child(n+2) {
   .shop-product {
   width: 48%; 
   }
+
+  /*popup обрезан сверху
+  .popup-form {
+    margin-top: 210px;
+  }*/
 }
 
 /*<640*/
@@ -1340,13 +1347,17 @@ p:nth-child(n+2) {
     padding-right: 0;
    }
 
-//*@media (max-width: 641px) and (orientation: landscape) {
-  .trends-container {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .popup-form {
+    margin-right: 15px; 
+    margin-left: 15px;
+    }
   }
-
-  .trend-item {
+/*@media (max-width: 641px) and (orientation: landscape) {
+  .popup-banner {
+    overflow-y: scroll;
+    margin-top: -50px;
+  }
+  /*.trend-item {
       width: 48%;
-  }
-}*//
+  }*/
+
