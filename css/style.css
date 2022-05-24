@@ -666,6 +666,8 @@ p:nth-child(n+2) {
     right: 0px;
     z-index: 20;
     overflow-y: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .popup-form {
